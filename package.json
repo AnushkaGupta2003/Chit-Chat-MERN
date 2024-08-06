@@ -1,10 +1,14 @@
 {
+	"homepage": "https://AnushkaGupta2003.github.io/Chit-Chat-MERN",
 	"name": "chat-app-yt",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
 	"scripts": {
 		"server": "nodemon backend/server.js",
+		
+		"predeploy":"npm run build",
+		"deploy": "gh-pages -d frontend/dist",
 		"start": "node backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
