@@ -7,8 +7,6 @@
 	"scripts": {
 		"server": "nodemon backend/server.js",
 		
-		"predeploy":"npm run build",
-		"deploy": "gh-pages -d frontend/dist",
 		"start": "node backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
